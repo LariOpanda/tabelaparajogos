@@ -1,7 +1,3 @@
-console.log("jogo")
-
-
-
 var dani = {
     nome: "Dani",
     vitorias: 2,
@@ -43,7 +39,7 @@ var dani = {
       html += "<td>" + jogadores[i].pontos + "</td><tr>"
       html += "<td><button onClick='adicionarVitoria(" + i + ")'>Vitória</button></td>"
       html += "<td><button onClick='adicionarEmpate(" + i + ")'>Empate</button></td>"
-      html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td>"
+      html += "<td><button onClick='adicionarDerrota(" + i + ")'>Derrota</button></td></tr>"
      }
     var tabelaJogadores = document.getElementById('tabelaJogadores')
     tabelaJogadores.innerHTML = html
